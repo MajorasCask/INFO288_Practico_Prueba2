@@ -1,0 +1,117 @@
+{
+    "grupos": [
+        {
+            "nombre": "joven",
+            "min": 5,
+            "max": 16
+        },
+        {
+            "nombre": "adulto",
+            "min": 17,
+            "max": 45
+        },
+        {
+            "nombre": "mayor",
+            "min": 46,
+            "max": 100
+        }
+    ],
+    "categorias": [
+        {
+            "nombre": "ecologia",
+            "joven": 1,
+            "adulto": 3,
+            "mayor": 2
+        },
+        {
+            "nombre": "medicina",
+            "joven": 1,
+            "adulto": 2,
+            "mayor": 3
+        },
+        {
+            "nombre": "energia",
+            "joven": 1,
+            "adulto": 3,
+            "mayor": 1
+        },
+        {
+            "nombre": "arqueologia",
+            "joven": 2,
+            "adulto": 3,
+            "mayor": 1
+        },
+        {
+            "nombre": "social",
+            "joven": 1,
+            "adulto": 3,
+            "mayor": 2
+        },
+        {
+            "nombre": "fisica",
+            "joven": 1,
+            "adulto": 3,
+            "mayor": 2
+        },
+        {
+            "nombre": "informatica",
+            "joven": 2,
+            "adulto": 3,
+            "mayor": 1
+        },
+        {
+            "nombre": "psicologia",
+            "joven": 1,
+            "adulto": 2,
+            "mayor": 2
+        },
+        {
+            "nombre": "robotica",
+            "joven": 3,
+            "adulto": 2,
+            "mayor": 2
+        },
+        {
+            "nombre": "quimica",
+            "joven": 1,
+            "adulto": 2,
+            "mayor": 1
+        },
+        {
+            "nombre": "astronomia",
+            "joven": 3,
+            "adulto": 2,
+            "mayor": 1
+        },
+        {
+            "nombre": "economia",
+            "joven": 1,
+            "adulto": 2,
+            "mayor": 3
+        },
+        {
+            "nombre": "ambiente",
+            "joven": 1,
+            "adulto": 3,
+            "mayor": 2
+        },
+        {
+            "nombre": "filosofia",
+            "joven": 1,
+            "adulto": 3,
+            "mayor": 2
+        },
+        {
+            "nombre": "biologia",
+            "joven": 2,
+            "adulto": 3,
+            "mayor": 1
+        },
+        {
+            "nombre": "tecnologia",
+            "joven": 3,
+            "adulto": 3,
+            "mayor": 2
+        }
+    ]
+}

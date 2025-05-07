@@ -1,0 +1,44 @@
+{ 
+    "libros": [
+        {
+            "titulo": "Introducción a la Biotecnología Moderna",
+            "categoria": "medicina"
+        },
+        {
+            "titulo": "Fundamentos de Energía Solar: Teoría y Práctica",
+            "categoria": "energia"
+        },
+        {
+            "titulo": "Big Data y Ciencia de Datos: Algoritmos y Aplicaciones",
+            "categoria": "informatica"
+        },
+        {
+            "titulo": "Neurociencia Cognitiva: Del Laboratorio al Aula",
+            "categoria": "psicologia"
+        },
+        {
+            "titulo": "Robótica Autónoma: De los Principios a la Implementación",
+            "categoria": "robotica"
+        },
+        {
+            "titulo": "La Química Verde: Innovaciones para un Futuro Sostenible",
+            "categoria": "quimica"
+        },
+        {
+            "titulo": "Astrofísica Contemporánea: Explorando el Universo Oscuro",
+            "categoria": "astronomia"
+        },
+        {
+            "titulo": "Geopolítica de los Recursos Naturales en el Siglo XXI",
+            "categoria": "economia"
+        },
+        {
+            "titulo": "Métodos Cuantitativos en Ciencias Sociales",
+            "categoria": "social"
+        },
+        {
+            "titulo": "Ingeniería de Software Ágil: Nuevas Perspectivas y Herramientas",
+            "categoria": "informatica"
+        }
+    ]
+}

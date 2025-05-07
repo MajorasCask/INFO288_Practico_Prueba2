@@ -1,0 +1,24 @@
+{
+    "slaves": [
+        {
+            "database": "tesis",
+            "ip": "127.0.0.1",
+            "port": 5001
+        },
+        {
+            "database": "libros",
+            "ip": "127.0.0.1",
+            "port": 5002
+        },
+        {
+            "database": "videos",
+            "ip": "127.0.0.1",
+            "port": 5003
+        },
+        {
+            "database": "documentales",
+            "ip": "127.0.0.1",
+            "port": 5004
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "documentales": [
+        {
+            "titulo": "La Última Frontera: Explorando los Océanos Abisales",
+            "categoria": "ecologia"
+        },
+        {
+            "titulo": "Cerebro Humano: El Universo Interior",
+            "categoria": "medicina"
+        },
+        {
+            "titulo": "Energía Limpia: La Carrera hacia un Mundo Sostenible",
+            "categoria": "energia"
+        },
+        {
+            "titulo": "Civilizaciones Perdidas: Descubrimientos Arqueológicos del Siglo XXI",
+            "categoria": "arqueologia"
+        },
+        {
+            "titulo": "La Era de los Robots: ¿Aliados o Amenaza?",
+            "categoria": "social"
+        },
+        {
+            "titulo": "Guardianes del Bosque: Luchas por la Amazonía",
+            "categoria": "ecologia"
+        },
+        {
+            "titulo": "La Revolución Genética: CRISPR y el Futuro de la Medicina",
+            "categoria": "medicina"
+        },
+        {
+            "titulo": "Enfermedades Emergentes: La Batalla Invisible",
+            "categoria": "medicina"
+        },
+        {
+            "titulo": "El Viaje del Agua: Desde las Montañas hasta el Mar",
+            "categoria": "ecologia"
+        },
+        {
+            "titulo": "Universos Paralelos: La Nueva Frontera de la Física",
+            "categoria": "fisica"
+        }
+    ]
+}

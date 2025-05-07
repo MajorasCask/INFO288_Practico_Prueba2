@@ -1,0 +1,44 @@
+{
+    "tesis": [
+        {
+            "titulo": "Optimización de Algoritmos Genéticos para la Predicción de Series Temporales Financieras",
+            "categoria": "informatica"
+        },
+        {
+            "titulo": "Efectos del Cambio Climático en la Biodiversidad de los Ecosistemas Andinos",
+            "categoria": "ambiente"
+        },
+        {
+            "titulo": "Desarrollo de Materiales Nanocompuestos para Aplicaciones Biomédicas",
+            "categoria": "medicina"
+        },
+        {
+            "titulo": "Inteligencia Artificial en la Detección Temprana de Enfermedades Neurodegenerativas",
+            "categoria": "medicina"
+        },
+        {
+            "titulo": "Impacto de las Políticas Públicas en la Sostenibilidad Energética en América Latina",
+            "categoria": "economia"
+        },
+        {
+            "titulo": "Estudio Comparativo de Métodos de Purificación de Agua en Comunidades Rurales",
+            "categoria": "social"
+        },
+        {
+            "titulo": "Análisis Crítico de la Filosofía de la Ciencia en la Era Digital",
+            "categoria": "filosofia"
+        },
+        {
+            "titulo": "Modelos Matemáticos para la Gestión de Tráfico en Ciudades Inteligentes",
+            "categoria": "social"
+        },
+        {
+            "titulo": "Influencia del Microbioma Intestinal en el Desarrollo Cognitivo Infantil",
+            "categoria": "medicina"
+        },
+        {
+            "titulo": "Aplicación de la Fotogrametría 3D en la Conservación del Patrimonio Arqueológico",
+            "categoria": "arqueologia"
+        }
+    ]
+}
