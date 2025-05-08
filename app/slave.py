@@ -3,6 +3,11 @@ import json
 import sys
 import re
 from collections import defaultdict
+#imports de log
+import time
+import socket
+from log_utils import build_log, log_local
+from log_client import send_logs_to_server
 
 app = Flask(__name__)
 
@@ -92,6 +97,8 @@ def topic_interest(categories, topic, age):
 @app.route("/busqueda", methods=["GET"])
 def buscar():
 
+    start = time.time()
+
     # Crea variables a partir de parametros de URL
     wordlist = request.args['titulo'].split(" ")
     age = request.args['edad']
@@ -122,6 +129,23 @@ def buscar():
         element["tipo"] = slave.dbname
         element["interes"] = topic_interest(categorias, element["categoria"], age)
         response.append(element)
+
+    end = time.time()
+    rango = "no dice"
+    age = int(age)
+    if(age > 4 and age < 17):
+        rango="joven"
+    elif (age > 16 and age < 44):
+        rango="adulto"
+    else:
+        rango="mayor"
+
+    wordlist = request.args["titulo"].replace(" ", "+")
+    #genera log
+    log_line = build_log(start, end, socket.gethostname(), f"esclavo{slave.port}", wordlist, len(response), rango)
+    log_file = f"slave{slave.port}.log"
+    log_local(log_line, log_file)
+    send_logs_to_server(log_file)
 
     return response
 

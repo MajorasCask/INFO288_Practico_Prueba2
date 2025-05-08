@@ -4,6 +4,12 @@ import requests
 
 app = Flask(__name__)
 
+#imports del log
+import time
+import socket
+from log_utils import build_log, log_local
+from log_client import send_logs_to_server
+
 # Diccionario de URLs de esclavos
 slaves = {}
 with open("config.json") as config_file:
@@ -37,6 +43,8 @@ def get_interest(json_elem):
 @app.route("/buscar", methods=["GET"])
 def busca_slave():
 
+    start = time.time()
+
     #Lista comun de resultados
     responses = {"respuesta": []}
     
@@ -67,6 +75,23 @@ def busca_slave():
     
     # Ordena los resultados por ranking e interes por edad, donde el interes tiene preferencia
     responses["respuesta"].sort(key = lambda elem: (get_interest(elem), get_rank(elem)), reverse = True)
+
+    #clasifica el rango
+    end = time.time()
+    rango = "no dice"
+    age = int(age)
+    if(age > 4 and age < 17):
+        rango="joven"
+    elif (age > 16 and age < 44):
+        rango="adulto"
+    else:
+        rango="mayor"
+    #genera log
+    #aqui envia el numero de responses
+    log_line = build_log(start, end, socket.gethostname(), f"Maestro", wordlist, len(responses["respuesta"]), rango)
+    log_file = f"master.log"
+    log_local(log_line, log_file)
+    send_logs_to_server(log_file)
     
     return responses
 
