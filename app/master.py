@@ -1,5 +1,6 @@
 from flask import Flask, request
 import json
+import sys
 import requests
 
 app = Flask(__name__)
@@ -86,9 +87,13 @@ def busca_slave():
         rango="adulto"
     else:
         rango="mayor"
+
+    responses_json = json.dumps(responses)
+    responses_tamaño = sys.getsizeof(responses_json)
+    tamañoMB = responses_tamaño / (1024 * 1024)
     #genera log
     #aqui envia el numero de responses
-    log_line = build_log(start, end, socket.gethostname(), f"Maestro", wordlist, len(responses["respuesta"]), rango)
+    log_line = build_log(start, end, socket.gethostname(), f"Maestro", wordlist, len(responses["respuesta"]), rango, tamañoMB)
     log_file = f"master.log"
     log_local(log_line, log_file)
     send_logs_to_server(log_file)

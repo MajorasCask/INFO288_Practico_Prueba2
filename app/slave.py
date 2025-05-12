@@ -130,6 +130,7 @@ def buscar():
         element["interes"] = topic_interest(categorias, element["categoria"], age)
         response.append(element)
 
+    #preparo los datos para el log
     end = time.time()
     rango = "no dice"
     age = int(age)
@@ -141,8 +142,12 @@ def buscar():
         rango="mayor"
 
     wordlist = request.args["titulo"].replace(" ", "+")
+
+    response_json = json.dumps(response)
+    response_tamaño = sys.getsizeof(response_json)
+    tamañoMB = response_tamaño / (1024 * 1024)
     #genera log
-    log_line = build_log(start, end, socket.gethostname(), f"esclavo{slave.port}", wordlist, len(response), rango)
+    log_line = build_log(start, end, socket.gethostname(), f"esclavo{slave.port}", wordlist, len(response), rango, tamañoMB)
     log_file = f"slave{slave.port}.log"
     log_local(log_line, log_file)
     send_logs_to_server(log_file)

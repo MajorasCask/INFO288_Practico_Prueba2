@@ -10,7 +10,7 @@ class LogServer(LogInterface):
         # Crear el archivo si no existe
         if not os.path.exists(self.log_file):
             with open(self.log_file, "w") as f:
-                f.write("# timestamp_ini,timestamp_fin,máquina,tipo_máquina,query,tiempo_total,score,rango_etario\n")
+                f.write("# timestamp_ini,timestamp_fin,máquina,tipo_máquina,query,tiempo_total,score,rango_etario,Tamaño_en_MB\n")
 
     def receive_log(self, log_line: str):
         log_line = log_line.strip()
