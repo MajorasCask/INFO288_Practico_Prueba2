@@ -24,3 +24,6 @@
 
 4. Si se solicita, permitir acceso de Firewall
 
+5. Ejecutar analisis_logs para obtener gráficos estadísticos basados en el log centralizado.
+   ```bash
+    python analisis_logs.py
